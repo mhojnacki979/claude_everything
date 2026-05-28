@@ -1,11 +1,23 @@
-# claude_everything — MFH Holdings Custom Skills
+# MFH Holdings Custom Claude Skills
 
-Custom Claude skills for Michael Hojnacki's AI infrastructure.
+Three custom skills for Claude Code + Claude.ai.
 
-## Skills
+## Skills Included
 
-| Skill | Purpose |
+| Skill | Triggers |
 |---|---|
-| esp32 | ESP32 firmware — HUB75, FreeRTOS, UDP, PlatformIO |
-| eyesonscore | EyesonScore monorepo — Fastify/Prisma/Railway/WebSocket |
-| substack-archery | Archer's Mind + From String to Target writing |
+| esp32 | ESP32, HUB75, FreeRTOS, PlatformIO, archery timer, LED panels |
+| eyesonscore | EyesonScore, Fastify, Prisma, Railway, monorepo, tournament scoring |
+| substack-archery | Archer's Mind, From String to Target, Coach's Corner, archery writing |
+
+## Install
+
+```bash
+chmod +x install.sh
+./install.sh
+```
+
+This copies all three skills to ~/.claude/skills/ where Claude Code picks them up automatically.
+
+## Manual install path for claude.ai
+Upload the individual SKILL.md files via Claude.ai settings → Skills.
